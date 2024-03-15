@@ -41,49 +41,55 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(62, 43);
+            label1.Font = new Font("Arial Rounded MT Bold", 9.75F);
+            label1.Location = new Point(42, 43);
             label1.Name = "label1";
-            label1.Size = new Size(87, 15);
+            label1.Size = new Size(108, 15);
             label1.TabIndex = 0;
             label1.Text = "ID PROVEEDOR";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(37, 97);
+            label2.Font = new Font("Arial Rounded MT Bold", 9.75F);
+            label2.Location = new Point(11, 97);
             label2.Name = "label2";
-            label2.Size = new Size(112, 15);
+            label2.Size = new Size(139, 15);
             label2.TabIndex = 1;
             label2.Text = "FECHA DE INGRESO";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(110, 142);
+            label3.Font = new Font("Arial Rounded MT Bold", 9.75F);
+            label3.Location = new Point(100, 142);
             label3.Name = "label3";
-            label3.Size = new Size(39, 15);
+            label3.Size = new Size(50, 15);
             label3.TabIndex = 2;
             label3.Text = "TOTAL";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(179, 40);
+            textBox1.Font = new Font("Book Antiqua", 12F);
+            textBox1.Location = new Point(159, 36);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(262, 23);
+            textBox1.Size = new Size(301, 27);
             textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(179, 136);
+            textBox2.Font = new Font("Book Antiqua", 12F);
+            textBox2.Location = new Point(159, 135);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(142, 23);
+            textBox2.Size = new Size(301, 27);
             textBox2.TabIndex = 4;
             // 
             // button1
             // 
-            button1.Location = new Point(230, 235);
+            button1.Font = new Font("Bahnschrift SemiCondensed", 16F, FontStyle.Bold);
+            button1.Location = new Point(72, 196);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(123, 44);
             button1.TabIndex = 6;
             button1.Text = "GUARDAR";
             button1.UseVisualStyleBackColor = true;
@@ -91,25 +97,28 @@
             // 
             // button2
             // 
-            button2.Location = new Point(463, 235);
+            button2.Font = new Font("Bahnschrift SemiCondensed", 16F, FontStyle.Bold);
+            button2.Location = new Point(269, 196);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(113, 44);
             button2.TabIndex = 7;
             button2.Text = "CANCELAR";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(179, 91);
+            dateTimePicker1.Font = new Font("Book Antiqua", 12F);
+            dateTimePicker1.Location = new Point(159, 89);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(215, 23);
+            dateTimePicker1.Size = new Size(301, 27);
             dateTimePicker1.TabIndex = 8;
             // 
             // IngresoInsertarVista
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(472, 288);
             Controls.Add(dateTimePicker1);
             Controls.Add(button2);
             Controls.Add(button1);
