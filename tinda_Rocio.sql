@@ -1,5 +1,5 @@
-CREATE DATABASE Desarrollo_De_Sistemas_I
-use desarrollo_de_sistemas_i
+CREATE DATABASE tienda_Rocio
+
 
 CREATE TABLE PERSONA (
 IDPERSONA INT IDENTITY (1,1) NOT NULL,

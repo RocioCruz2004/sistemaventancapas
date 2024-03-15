@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SistemasVentas.DAL;
+using SistemasVentas.Modelos;
 
 namespace SistemasVentas.BSS
 {
@@ -14,6 +15,10 @@ namespace SistemasVentas.BSS
         public DataTable ListarProveedorBss()
         {
             return dal.ListarProveedorDal();
+        }
+        public void InsertarProveedorBss(Proveedor proveedor)
+        {
+            dal.InsertarProveedorDal(proveedor);
         }
     }
 }

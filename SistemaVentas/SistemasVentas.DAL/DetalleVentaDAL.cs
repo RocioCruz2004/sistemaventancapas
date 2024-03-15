@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SistemasVentas.Modelos;
 
 namespace SistemasVentas.DAL
 {
@@ -15,6 +16,16 @@ namespace SistemasVentas.DAL
             string consulta = "SELECT * FROM DETALLEVENTA";
             DataTable lista = Conexion.EjecutarDataTabla(consulta, "tabla");
             return lista;
+        }
+        public void InsertarDetalleVentaDal(DetalleVenta DetalleVenta)
+        {
+            string consulta = "INSERT INTO DETALLEVENTA VALUES ( " + DetalleVenta.IdVenta + " ," +
+                                                                 " " + DetalleVenta.IdProducto + " ," +
+                                                                 " " + DetalleVenta.Cantidad + " ," +
+                                                                 " " + DetalleVenta.PrecioVenta + " ," +
+                                                                 " " + DetalleVenta.Subtotal + " ," +
+                                                                 " 'Exitoso')";
+            Conexion.Ejecutar(consulta);
         }
     }
 }

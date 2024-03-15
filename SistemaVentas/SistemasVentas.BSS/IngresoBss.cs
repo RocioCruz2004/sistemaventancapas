@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SistemasVentas.DAL;
+using SistemasVentas.Modelos;
 
 namespace SistemasVentas.BSS
 {
@@ -14,6 +15,10 @@ namespace SistemasVentas.BSS
         public DataTable ListarIngresoBss()
         {
             return dal.ListarIngresoDal();
+        }
+        public void InsertarIngresoBss(Ingreso ingreso)
+        {
+            dal.InsertarIngresoDal(ingreso);
         }
     }
 }

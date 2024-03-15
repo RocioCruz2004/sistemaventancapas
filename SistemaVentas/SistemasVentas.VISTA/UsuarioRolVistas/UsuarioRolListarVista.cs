@@ -18,10 +18,10 @@ namespace SistemasVentas.VISTA.UsuarioRolVistas
             InitializeComponent();
         }
 
-        UsuarioBss bss= new UsuarioBss();
+        UsuarioRolBss bss= new UsuarioRolBss();
         private void UsuarioRolListarVista_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = bss.ListarUsuarioBss();
+            dataGridView1.DataSource = bss.ListarUsuarioRolBss();
         }
     }
 }

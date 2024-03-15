@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SistemasVentas.Modelos;
 
 namespace SistemasVentas.DAL
 {
@@ -14,6 +15,14 @@ namespace SistemasVentas.DAL
             string consulta = "SELECT * FROM INGRESO";
             DataTable lista = Conexion.EjecutarDataTabla(consulta, "tabla");
             return lista;
+        }
+        public void InsertarIngresoDal(Ingreso ingreso)
+        {
+            string consulta = "INSERT INTO INGRESO VALUES( " + ingreso.IdProveedor + ", " +
+                                                           " '" + ingreso.FechaIngreso + "', " +
+                                                           " " + ingreso.Total + ", " +
+                                                           " 'Activo')";
+            Conexion.Ejecutar(consulta);
         }
     }
 }
