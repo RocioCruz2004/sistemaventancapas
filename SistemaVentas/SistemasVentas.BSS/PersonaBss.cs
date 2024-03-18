@@ -20,5 +20,9 @@ namespace SistemasVentas.BSS
         { 
             dal.InsertarPersonasDal(persona);
         }
+        public Persona ObtenerIdBss (int id)
+        {
+            return dal.ObtenerPersonaId(id);
+        }
     }
 }

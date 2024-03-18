@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SistemasVentas.BSS;
 using SistemasVentas.Modelos;
+using SistemasVentas.VISTA.PersonaVistas;
 
 namespace SistemasVentas.VISTA.UsuarioVistas
 {
@@ -30,6 +31,17 @@ namespace SistemasVentas.VISTA.UsuarioVistas
 
             bss.InsertarUsuarioBss(u);
             MessageBox.Show("Se guardo correctamente!");
+        }
+        public static int IdPersonaSeleccionada = 0; //variable global
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            PersonaListarVista plv = new PersonaListarVista();
+            /*plv.ShowDialog();*/
+            if (plv.ShowDialog() == DialogResult.OK)
+            {
+
+            }
         }
     }
 }
