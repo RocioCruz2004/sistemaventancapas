@@ -26,7 +26,7 @@ namespace SistemasVentas.VISTA.MarcaVistas
             m.Nombre = textBox1.Text;
 
             bss.InsertarMarcaBss(m);
-            MessageBox.Show("Se guardó correctamente la persona");
+            MessageBox.Show("Se guardó correctamente");
         }
     }
 }

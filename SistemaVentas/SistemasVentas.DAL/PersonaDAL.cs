@@ -47,5 +47,22 @@ namespace SistemasVentas.DAL
             }
             return persona;
         }
+
+        public void EditarPersonaDal (Persona p)
+        {
+            string consulta = "UPDATE PERSONA SET nombre='" + p.Nombre + "' ," +
+                                                         "apellido= '" + p.Apellido + "' ," +
+                                                         "telefono= '" + p.Telefono + "' , " +
+                                                         "ci= '" + p.CI + "' ," +
+                                                         "correo= '" + p.Correo + "' " +
+                                "WHERE IDPERSONA=" + p.IdPersona;
+            Conexion.Ejecutar(consulta);
+        }
+
+        public void EliminarPersonaDal(int id)
+        {
+            string consulta = "DELETE FROM PERSONA WHERE IDPERSONA=" + id;
+            Conexion.Ejecutar (consulta);
+        }
     }
 }

@@ -38,12 +38,14 @@
             dateTimePicker1 = new DateTimePicker();
             button1 = new Button();
             button2 = new Button();
+            button3 = new Button();
+            button5 = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(64, 69);
+            label1.Location = new Point(64, 77);
             label1.Name = "label1";
             label1.Size = new Size(65, 15);
             label1.TabIndex = 0;
@@ -52,7 +54,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(48, 121);
+            label2.Location = new Point(48, 128);
             label2.Name = "label2";
             label2.Size = new Size(81, 15);
             label2.TabIndex = 1;
@@ -78,14 +80,14 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(149, 68);
+            textBox1.Location = new Point(149, 70);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(237, 23);
             textBox1.TabIndex = 4;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(149, 118);
+            textBox2.Location = new Point(149, 120);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(237, 23);
             textBox2.TabIndex = 5;
@@ -123,11 +125,33 @@
             button2.Text = "CANCELAR";
             button2.UseVisualStyleBackColor = true;
             // 
+            // button3
+            // 
+            button3.Location = new Point(403, 120);
+            button3.Name = "button3";
+            button3.Size = new Size(111, 23);
+            button3.TabIndex = 11;
+            button3.Text = "SELECCIONAR";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(403, 69);
+            button5.Name = "button5";
+            button5.Size = new Size(111, 23);
+            button5.TabIndex = 10;
+            button5.Text = "SELECCIONAR";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
             // VentaIngresarVista
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button3);
+            Controls.Add(button5);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(dateTimePicker1);
@@ -140,6 +164,7 @@
             Controls.Add(label1);
             Name = "VentaIngresarVista";
             Text = "VentaIngresarVista";
+            Load += VentaIngresarVista_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -156,5 +181,7 @@
         private DateTimePicker dateTimePicker1;
         private Button button1;
         private Button button2;
+        private Button button3;
+        private Button button5;
     }
 }

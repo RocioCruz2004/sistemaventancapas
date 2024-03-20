@@ -20,5 +20,18 @@ namespace SistemasVentas.BSS
         {
             dal.InsertarClientesDal(cliente);
         }
+       public Cliente ObtenerClienteId (int id)
+        {
+            return dal.ObtenerClienteId(id);
+        }
+
+        public void EditarClienteBss(Cliente cliente)
+        {
+            dal.EditarClienteDal(cliente);
+        }
+        public void EliminarClienteBss(int id)
+        {
+            dal.EliminarClienteDal(id);
+        }
     }
 }

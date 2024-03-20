@@ -52,12 +52,14 @@
             // 
             // button1
             // 
+            button1.DialogResult = DialogResult.OK;
             button1.Location = new Point(620, 83);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 18;
             button1.Text = "GUARDAR";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // textBox3
             // 
@@ -135,7 +137,7 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
-            // UsuarioInsertarVista
+            // InsertarUsuarioVista
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -151,7 +153,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "UsuarioInsertarVista";
+            Name = "InsertarUsuarioVista";
             Text = "UsuarioInsertarVista";
             ResumeLayout(false);
             PerformLayout();

@@ -1,4 +1,5 @@
 using SistemasVentas.BSS;
+using SistemasVentas.Modelos;
 
 namespace SistemasVentas.VISTA
 {
@@ -13,7 +14,7 @@ namespace SistemasVentas.VISTA
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new UsuarioVista.InsertarUsuarioVista());
+            Application.Run(new UsuarioRolVistas.UsuarioRolListarVista());
         }
     }
 }

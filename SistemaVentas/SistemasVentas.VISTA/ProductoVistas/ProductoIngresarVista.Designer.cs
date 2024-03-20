@@ -42,6 +42,8 @@
             textBox6 = new TextBox();
             button1 = new Button();
             button2 = new Button();
+            button3 = new Button();
+            button5 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -142,6 +144,7 @@
             // 
             // button1
             // 
+            button1.DialogResult = DialogResult.OK;
             button1.Location = new Point(551, 113);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
@@ -159,11 +162,33 @@
             button2.Text = "CANCELAR";
             button2.UseVisualStyleBackColor = true;
             // 
+            // button3
+            // 
+            button3.Location = new Point(395, 98);
+            button3.Name = "button3";
+            button3.Size = new Size(111, 23);
+            button3.TabIndex = 15;
+            button3.Text = "SELECCIONAR";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(395, 47);
+            button5.Name = "button5";
+            button5.Size = new Size(111, 23);
+            button5.TabIndex = 14;
+            button5.Text = "SELECCIONAR";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
             // ProductoIngresarVista
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button3);
+            Controls.Add(button5);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox6);
@@ -200,5 +225,7 @@
         private TextBox textBox6;
         private Button button1;
         private Button button2;
+        private Button button3;
+        private Button button5;
     }
 }
